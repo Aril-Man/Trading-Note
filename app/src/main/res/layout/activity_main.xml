@@ -5,27 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#F0F2F5"> <!-- Warna latar belakang sedikit abu-abu -->
-
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Manajemen Trading"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#333333"
-        android:gravity="center"
-        android:padding="16dp"
-        android:background="#FFFFFF"
-        android:elevation="4dp"
-        android:layout_marginBottom="8dp"/>
+    android:background="#F0F2F5">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewTrades"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tv_title"
         android:padding="8dp"
         android:clipToPadding="false"
         android:clipChildren="false"/>
@@ -38,7 +23,7 @@
         android:text="Belum ada catatan trading. Tambahkan yang pertama!"
         android:textSize="18sp"
         android:textColor="#888888"
-        android:visibility="gone"/> <!-- Akan terlihat jika tidak ada trading -->
+        android:visibility="gone"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddTrade"

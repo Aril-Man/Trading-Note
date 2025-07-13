@@ -41,7 +41,6 @@ public class AddEditTradeActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         if (intent != null && intent.hasExtra("trade_id")) {
-            // Mode edit
             tvAddEditTitle.setText("Edit Trading");
             btnSaveTrade.setText("Perbarui Trading");
 
@@ -97,7 +96,6 @@ public class AddEditTradeActivity extends AppCompatActivity {
         String profitString = etTradeProfit.getText().toString().trim();
         String lossString = etTradeLoss.getText().toString().trim();
 
-        // Validasi input
         if (dateString.isEmpty() || amountString.isEmpty() || profitString.isEmpty() || lossString.isEmpty()) {
             Toast.makeText(this, "Harap isi semua kolom!", Toast.LENGTH_SHORT).show();
             return;
